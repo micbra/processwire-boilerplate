@@ -8,7 +8,7 @@ This repsoitory delivers you with the latest ProcessWire development version bun
 * Modules: TemplateTwigReplace, TemplateDataproviders, ProcesswireUpgrade, HelperFieldLinks
 * [Bourbon](http://bourbon.io)
 * [pureCSS](http://purecss.io)
-* Grunt (with contrib-sass, contrib-unglify and contrib-watch)
+* Grunt (with contrib-sass, contrib-unglify, contrib-jshint and contrib-watch)
 * jQuery
 
 

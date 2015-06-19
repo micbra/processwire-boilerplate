@@ -16,6 +16,6 @@ PROJECT.myModule = (function($, win, doc, undefined) {
 			privateFunction();
 			console.log(anotherVar);
 		}
-	}
+	};
 
 })(jQuery, window, document);
