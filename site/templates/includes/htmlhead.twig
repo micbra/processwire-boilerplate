@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>{{page.title}}</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{#
+** Touch Icons and Favicon
+*** Uncomment the following section when you have placed the icons in the dedicated folder
+#}
+
+{#
+<link rel="apple-touch-icon" href="{{ config.urls.templates }}assets/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="{{ config.urls.templates }}assets/img/apple-touch-icon-precomposed.png">
+<link rel="icon" href="{{ config.urls.templates }}assets/img/favicon.png">
+#}
+
+
+
+{#
+** Minifized CSS
+*** If you are ready to deploy your project, run 'grunt deploy' and set debug to false in your config.php
+#}
+{% if config.debug %}
+	<link rel="stylesheet" href="{{ config.urls.templates }}assets/css/main.css">
+{% else %}
+	<link rel="stylesheet" href="{{ config.urls.templates }}assets/css/main.min.css">
+{% endif %}
+

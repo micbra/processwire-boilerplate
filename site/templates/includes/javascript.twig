@@ -1,0 +1,19 @@
+<script src="{{ config.urls.templates }}assets/js/lib/jquery.js"></script>
+<script>
+	var PROJECT = {};
+</script>
+
+{#
+** Uglified JS
+*** If you are ready to deploy your project, run 'grunt deploy' and set debug to false in your config.php
+#}
+{% if config.debug %}
+	<script src="{{ config.urls.templates }}assets/js/app/myModule.js"></script>
+	<script src="{{ config.urls.templates }}assets/js/main.js"></script>
+{% else %}
+	<script src="{{ config.urls.templates }}assets/js/app.min.js"></script>
+{% endif %}
+
+<script type="text/javascript">
+	// Add more JavaScript (e.g. Google Analytics) here
+</script>

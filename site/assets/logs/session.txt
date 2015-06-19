@@ -1,0 +1,1 @@
+2015-06-10 16:48:41	admin	http://localhost/tiny_projects/processwire-boilerplate/processwire/login/	Successful login for 'admin'
