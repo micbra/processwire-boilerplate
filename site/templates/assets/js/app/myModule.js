@@ -1,30 +1,26 @@
 PROJECT.myModule = (function($, win, doc, undefined) {
 
-	/* private objects */
-	var privateVar = 'This is a private Variable',
-		anotherVar = 'This is another private Variable';
+	/* private */
+	var _private = {
+		var privateVar = 'this is a private variable';
 
-	function privateFunction() {
-		console.log('private function returns: ' + privateVar );
-	}
-	function anotherPrivateFunction() {
-		api.anotherPublicMethod();
-	}
-
-
-	/* public methods */
-	var api = {
-		publicMethod : function() {
-			console.log('public method returns: This is a public method with access to private objects -> ' + privateVar );
-			privateFunction();
-			console.log(anotherVar);
-		},
-		anotherPublicMethod: function() {
-			api.publicMethod();
+		function privateFunction() {
+			console.log( privateVar );
 		}
+		function anotherPrivateFunction() {
+			_public.anotherPublicMethod();
+		}
+	}
+
+
+	/* public */
+	var _public = {
+		publicMethod : function() {},
+		anotherPublicMethod: function() {},
+		yetAnotherPublicMethod: _private.privateFunction
 	};
 	
-	/* return public methods */
-	return api;
+	/* return public object */
+	return _public;
 
 })(jQuery, window, document);
